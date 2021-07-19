@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0FAAAAAA"
+    android:layout_height="match_parent"
+    tools:context=".ViewDeatils">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:id="@+id/optionmenu"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32000003">
+
+        <TextView
+            android:id="@+id/nameofperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Nameee"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <ImageView
+            android:layout_width="23dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:layout_gravity="right"
+            android:layout_marginTop="90dp"
+            android:layout_height="23dp"
+            android:id="@+id/starr"
+            android:layout_marginRight="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:text="1234567890"
+            android:id="@+id/numbers"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_width="27dp"
+           android:src="@drawable/ic_baseline_call_green"
+            android:layout_marginTop="120dp"
+            android:id="@+id/callsymbol"
+            android:layout_marginLeft="100dp"
+            android:layout_height="27dp"/>
+        <ImageView
+            android:layout_width="27dp"
+            android:src="@drawable/ic_baseline_message_24"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/msgoption"
+            android:layout_height="27dp"/>
+        <ImageView
+            android:layout_width="29dp"
+            android:src="@drawable/ic_baseline_videocam_24"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="260dp"
+            android:id="@+id/videocall"
+            android:layout_height="29dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Mobile"
+            android:textColor="#E2AAAAAA"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:text="1234567890"
+            android:id="@+id/mobilesame"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_baseline_call_green" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_baseline_message_24" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_baseline_videocam_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:text="Ringtone"
+            android:textColor="#E2AAAAAA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="Default"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectaa"
+        android:paddingLeft="100dp"
+        android:paddingTop="5dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="5dp"
+        android:text="Histroy"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.41"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_qr_code_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="5dp"
+                android:text="QR code"
+                android:textColor="#EBAAAAAA"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/editt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_edit_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="5dp"
+                android:text="Edit"
+                android:textColor="#EBAAAAAA"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Share"
+                android:textColor="#EBAAAAAA"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cameraa"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circle"
+        android:padding="25dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
